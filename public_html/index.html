@@ -16,9 +16,9 @@ Fundamentos de Git
 
 <h2>Instantaneas, no diferencias</h2>
 <p>La principal diferencia entre Git y cualquier otro VCS (Subversion y compañía incluidos) es cómo Git modela sus datos. Conceptualmente, la mayoría de los demás sistemas almacenan la información como una lista de cambios en los archivos. Estos sistemas (CVS, Subversion, Perforce, Bazaar, etc.) modelan la información que almacenan como un conjunto de archivos y las modificaciones hechas sobre cada uno de ellos a lo largo del tiempo, como ilustra la Figura.</p>
-<img src="img1.png">
+<img src="imagenes/img1.png">
 <p>Git no modela ni almacena sus datos de este modo. En cambio, Git modela sus datos más como un conjunto de instantáneas de un mini sistema de archivos. Cada vez que confirmas un cambio, o guardas el estado de tu proyecto en Git, él básicamente hace una foto del aspecto de todos tus archivos en ese momento, y guarda una referencia a esa instantánea. Para ser eficiente, si los archivos no se han modificado, Git no almacena el archivo de nuevo, sólo un enlace al archivo anterior idéntico que ya tiene almacenado. Git modela sus datos más como en la Figura 1-5.</p>
-<img src="img2.png">
+<img src="imagenes/img2.png">
 <h2>Casi cualquier operacion es local</h2>
 <p>La mayoría de las operaciones en Git sólo necesitan archivos y recursos locales para operar. Por lo general no se necesita información de ningún otro ordenador de tu red. Si estás acostumbrado a un CVCS donde la mayoría de las operaciones tienen esa sobrecarga del retardo de la red, este aspecto de Git te va a hacer pensar que los dioses de la velocidad han bendecido Git con poderes sobrenaturales. Como tienes toda la historia del proyecto ahí mismo, en tu disco local, la mayoría de las operaciones parecen prácticamente inmediatas.</p>
 
@@ -43,7 +43,7 @@ Fundamentos de Git
 
 <p>Esto nos lleva a las tres secciones principales de un proyecto de Git: el directorio de Git (Git directory), el directorio de trabajo (working directory), y el área de preparación (staging area).</p>
 
-<img src="img3.png">
+<img src="imagenes/img3.png">
 
 <p>Figura 1-6. Directorio de trabajo, área de preparación y directorio de Git.
     El directorio de Git es donde Git almacena los metadatos y la base de datos de objetos para tu proyecto. Es la parte más importante de Git, y es lo que se copia cuando clonas un repositorio desde otro ordenador.</p>
@@ -65,6 +65,10 @@ Fundamentos de Git
 
 <p>Si una versión concreta de un archivo está en el directorio de Git, se considera confirmada (committed). Si ha sufrido cambios desde que se obtuvo del repositorio, pero ha sido añadida al área de preparación, está preparada (staged). Y si ha sufrido cambios desde que se obtuvo del repositorio, pero no se ha preparado, está modificada (modified). En el Capítulo 2 aprenderás más acerca de estos estados, y de cómo puedes aprovecharte de ellos o saltarte toda la parte de preparación.</p>
 
-
+<a href="Tablas\mitabla.html">Vaya a la Tabla de Git</a> <br>
+  <a href="#Primero">Volver Al Primer Apartado</a> <br>
+  <a href="#Segundo">Volver Al Segundo Apartado</a>
+  
+  
 </body>
 </html>
